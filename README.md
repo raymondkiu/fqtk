@@ -88,7 +88,7 @@ Please report any issues to the [issues page](https://github.com/raymondkiu/fqtk
 
 ## Citation
 If you use fqtk for results in your publication, please cite:
-* Kiu R, *fqtk: A toolkit to perform common tasks on FASTQ reads *, **GitHub** `https://github.com/raymondkiu/fqtk`
+* Kiu R, *fqtk: A toolkit to perform common tasks on FASTQ reads*, **GitHub** `https://github.com/raymondkiu/fqtk`
 
 ## License
 fqtk is a free software licensed under [GPLv3](https://github.com/raymondkiu/fqtk/blob/master/LICENSE)
