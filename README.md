@@ -1,5 +1,5 @@
-# fqtk
-fqtk: a toolkit to perform common tasks on FASTQ readsincluding renaming identifiers, printing FASTQ statistics and converting FASTQ to FASTA. This program is written purely in Bash.
+# fqtk: a toolkit to perform common tasks on FASTQ reads
+fqtk: a toolkit to perform common tasks on FASTQ reads including renaming identifiers, printing FASTQ statistics and converting FASTQ to FASTA. This program is written purely in Bash.
 
 ## Usage
 ```
@@ -21,7 +21,7 @@ Version 1.0 (2022)
 Author: Raymond Kiu Raymond.Kiu@quadram.ac.uk
 ```
 
-### To rename FASTQ identifiers
+#### To rename FASTQ identifiers
 Some paired-end FASTQ may not have the classic suffixes /1 (forward) or /2 (reverse) which may cause downstream problems in several programs such as BWA (older versions).  That is when you need to rename the FASTQ to make it work. To do this
 ```
 $ fqtk -a FASTQ abc /1
@@ -49,7 +49,7 @@ $ fqtk -a FASTQ abc /1 > NEWFASTQ
 ```
 
 
-### To print FASTQ stats
+#### To print FASTQ stats
 ```
 $ fqtk -q FASTQ
 Sample: NEWFASTQ.fastq
@@ -61,14 +61,14 @@ Min read length: 100
 Mean read length: 100
 ```
 
-### To print FASTQ stats in tabular format
+#### To print FASTQ stats in tabular format
 ```
 $ fqtk -r FASTQ
 SampleID	Size	Total_bases	Reads	MaxRL	MinRL	MeanRL	
 NEWFASTQ.fastq	64K	400	4	100	100	100
 ```
 
-### To convert FASTQ into FASTA
+#### To convert FASTQ into FASTA
 ```
 $ fqtk -t FASTQ
 >abc1/1
