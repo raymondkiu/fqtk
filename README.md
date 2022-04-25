@@ -1,5 +1,5 @@
 # fqtk: a toolkit to perform common tasks on FASTQ reads
-Renaming FASTQ identifiers, printing FASTQ statistics and converting FASTQ to FASTA. This program is written in Bash.
+Rename FASTQ identifiers, print FASTQ statistics and convert FASTQ to FASTA. This program is written in Bash.
 
 ## Usage
 ```
