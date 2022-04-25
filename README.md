@@ -21,7 +21,7 @@ Version 1.0 (2022)
 Author: Raymond Kiu Raymond.Kiu@quadram.ac.uk
 ```
 
-#### To rename FASTQ identifiers
+### To rename FASTQ identifiers
 Some paired-end FASTQ may not have the classic suffixes /1 (forward) or /2 (reverse) which may cause downstream problems in several programs such as BWA (older versions).  That is when you need to rename the FASTQ to make it work. To do this
 ```
 $ fqtk -a FASTQ abc /1
@@ -47,9 +47,14 @@ In order to save into a new fastq file, use the > sign:
 ```
 $ fqtk -a FASTQ abc /1 > NEWFASTQ
 ```
+It took around 3 mins to finish renaming a ~3.8G fastq file on 4 cpus and 4GB of RAM:
+```
+real    2m50.706s
+user    0m26.429s
+sys     0m12.584s
+```
 
-
-#### To print FASTQ stats
+### To print FASTQ stats
 ```
 $ fqtk -q FASTQ
 Sample: NEWFASTQ.fastq
@@ -61,14 +66,14 @@ Min read length: 100
 Mean read length: 100
 ```
 
-#### To print FASTQ stats in tabular format
+### To print FASTQ stats in tabular format
 ```
 $ fqtk -r FASTQ
 SampleID	Size	Total_bases	Reads	MaxRL	MinRL	MeanRL	
 NEWFASTQ.fastq	64K	400	4	100	100	100
 ```
 
-#### To convert FASTQ into FASTA
+### To convert FASTQ into FASTA
 ```
 $ fqtk -t FASTQ
 >abc1/1
